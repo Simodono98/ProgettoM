@@ -36,6 +36,8 @@ namespace TCP_AC
                     
                     Console.WriteLine("Waiting for second connection.....");
                     P1.Send(asen.GetBytes("1"));
+
+
                     /* Second Connection */
                     Socket P2 = myList.AcceptSocket();
                     Console.WriteLine("Connection accepted from " + P2.RemoteEndPoint);
