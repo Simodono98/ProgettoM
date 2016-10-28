@@ -47,8 +47,6 @@ namespace ProgettoM
                 Int32 bytes = reader.Read(buffer, 0, buffer.Length);
                 String responseData = System.Text.Encoding.ASCII.GetString(buffer, 0, bytes);
 
-                //reader.Read(buffer, 0, buffer.Length);
-
                 if (responseData == "1")
                 {
                     Memory m = new Memory(true, tcpclnt);
